@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./output.css" rel="stylesheet">
+    <script src="main.js"></script>
 </head>
 <body class="bg-[#1c1c20] ">
     <nav class=" bg- flex justify-between p-4 bg-[#0a0a0f] rounded-3xl border-2 border-[rgba(214, 86, 86, 0.4)] ml-16 mr-16 mt-3 items-center   ">
@@ -18,8 +19,20 @@
             <li class="mx-2.5"><a href=""></a>CHEMISTRY</li>
             <li class="mx-2.5"><a href="https://presenter.jivrus.com/p/1CnBf1AVEyhixj85-dm2xsxw-jLW_pyc2bONhhYJdtAQ" target="_blank">MOCK_TEST</a></li> 
         </ul>
-        <div class="bg- h-8 p-2 pb-2 flex items-center">
-            <a class="flex items-center gap-2 px-4 py-2 bg-[#f03f5c] text-[#ffddfc] text-[15px] font-medium rounded-full hover:bg-[#ad111e] transition-all border-2 border-[#2a2a2e]" href="../login_project/html_file/login.html" target="_blank"><button>Login</button></a>
+        <div class="relative flex items-center h-8" id="authContainer">
+            <a id="loginBtn" class="flex items-center gap-2 px-4 py-2 bg-[#f03f5c] text-[#ffddfc] text-[15px] font-medium rounded-full hover:bg-[#ad111e] transition-all border-2 border-[#2a2a2e]" href="../login_project/html_file/login.html">
+                Login
+            </a>
+            <!-- building dropdown and profile picture at place of login menu after login and  -->
+            <div id="userProfile" class="hidden relative">
+                <img id="profileImg" src="profile.avif" alt="User" class="w-10 h-10 rounded-full border-2 border-[#f03f5c] cursor-pointer hover:scale-105 transition-transform object-cover">
+                <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-32 bg-[#0a0a0f] border border-[#f03f5c] rounded-lg shadow-xl z-50 overflow-hidden">
+                    <button id="logoutBtn" class="w-full text-left px-4 py-2 text-red-100 hover:bg-[#f03f5c] hover:text-white text-sm transition-colors">
+                        Logout
+                    </button>
+                </div>
+            </div>
+            <!-- --------------------------------------------- -->
         </div>
     </nav>
     <header class="text-center flex items-center justify-center mt-30 mb-10 text-5xl font-bold text-[#E1D4C1]" style="text-shadow: 0px 0px 0.8px lightpink , 0px 0px 0.8px lightpink, 0px 0px 0.8px lightpink, 0px 0px 0.8px lightpink ;">
