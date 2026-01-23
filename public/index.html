@@ -14,10 +14,10 @@
             <p class="h-6 font-semibold text-red-300 w-28">Jee_Simulator</p>
         </div>
         <ul class="flex justify-between gap-3 items-center text-red-200 ">
-            <li class="mx-2.5"><a href=""></a>MATHS</li>
-            <li class="mx-2.5"><a href=""></a>PHYSICS</li>
-            <li class="mx-2.5"><a href=""></a>CHEMISTRY</li>
-            <li class="mx-2.5"><a href="https://presenter.jivrus.com/p/1CnBf1AVEyhixj85-dm2xsxw-jLW_pyc2bONhhYJdtAQ" target="_blank">MOCK_TEST</a></li> 
+            <li class="mx-2.5"><a href="">MATHS</a></li>
+            <li class="mx-2.5"><a href="">PHYSICS</a></li>
+            <li class="mx-2.5"><a href="">CHEMISTRY</a></li>
+            <li class="mx-2.5"><a href="https://presenter.jivrus.com/p/1TQPHr3RuoeDxwkcFgAHLD7ODUltmr0RU8e7Qdy7ZKSY" target="_blank">MOCK_TEST</a></li> 
         </ul>
         <div class="relative flex items-center h-8" id="authContainer">
             <a id="loginBtn" class="flex items-center gap-2 px-4 py-2 bg-[#f03f5c] text-[#ffddfc] text-[15px] font-medium rounded-full hover:bg-[#ad111e] transition-all border-2 border-[#2a2a2e]" href="../login_project/html_file/login.html">
@@ -26,6 +26,7 @@
             <!-- building dropdown and profile picture at place of login menu after login and  -->
             <div id="userProfile" class="hidden relative">
                 <img id="profileImg" src="profile.avif" alt="User" class="w-10 h-10 rounded-full border-2 border-[#f03f5c] cursor-pointer hover:scale-105 transition-transform object-cover">
+                <span id="userNameDisplay" class="text-red-200 font-semibold text-sm"></span>
                 <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-32 bg-[#0a0a0f] border border-[#f03f5c] rounded-lg shadow-xl z-50 overflow-hidden">
                     <button id="logoutBtn" class="w-full text-left px-4 py-2 text-red-100 hover:bg-[#f03f5c] hover:text-white text-sm transition-colors">
                         Logout
@@ -49,24 +50,36 @@
     <!-- -----------CARDS----------------------------------------------------------------- -->
 
     <div class="flex gap-16 justify-center p-5">
-        <div class="bg-[#0a0a0f] shadow-xl shadow-gray-700/50 flex justify-center items-center flex-col w-75 py-2.5 px-12.5 border-2 border-[#7E102C]/14 rounded-lg ">
+        <div class="bg-[#0a0a0f] shadow-xl cursor-pointer shadow-gray-700/50 flex animate-pulse hover:animate-none justify-center items-center flex-col w-75 py-2.5 px-12.5 border-2 border-[#7E102C]/14 rounded-lg ">
             <img class="w-25 h-25 rounded-[50px] mb-4" src="profile.avif" alt="">
             <h2 class="my-4 text-red-200">Yash Raj, IIT kanpur</h2>
             <p class="text-center" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: lightblue;"> i have practised questions on this platform named jee simulator and to be very honest it's one pf the best in the bussiness.</p>
         </div>
-        <div class="bg-[#0a0a0f] shadow-xl shadow-gray-700/50 flex justify-center items-center flex-col w-75 py-2.5 px-12.5 border-2 border-[#7E102C]/14 rounded-lg ">
+        <div class="bg-[#0a0a0f] cursor-pointer shadow-xl shadow-gray-700/50 flex animate-pulse hover:animate-none justify-center items-center flex-col w-75 py-2.5 px-12.5 border-2 border-[#7E102C]/14 rounded-lg ">
             <img class="w-25 h-25 rounded-[50px] mb-4" src="profile.avif" alt="">
             <h2 class="my-4 text-red-200">Harshit Raj, NIT silchar</h2>
             <p class="text-center" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: lightblue;">In the last months of 
                 my jee prep this Jee Simulator has helped me a lot in giving time bound mock tests
             </p>
         </div>
-        <div class="bg-[#0a0a0f] shadow-xl shadow-gray-700/50 flex justify-center items-center flex-col w-75 py-2.5 px-12.5 border-2 border-[#7E102C]/14 rounded-lg ">
+        <div class="bg-[#0a0a0f] cursor-pointer shadow-xl shadow-gray-700/50 flex animate-pulse hover:animate-none justify-center items-center flex-col w-75 py-2.5 px-12.5 border-2 border-[#7E102C]/14 rounded-lg ">
             <img class="w-25 h-25 rounded-[50px] mb-4" src="profile.avif" alt="">
             <h2 class="my-4 text-red-200">Shashi Bhusan, IIIT Una</h2>
             <p class="text-center" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: lightblue;">
                 the best feature about this Jee Simulator is that it's clean and simple to use with simple UI </p>
         </div>
+<!-- -----------cards_done---------------------------------------------------------- -->
+    </div>
+    <div class="text-white flex animate-none hover:animate-bounce justify-center items-center w-full text-center mb-10 mt-5 font-extralight text-lg  " style="font-family: monospace;">
+        <h1 class="bg-[#E1D4C1]/10 border border-[#E1D4C1]/20 rounded-full  p-2 text-fuchsia-300">Wanna use AI_bot?Never mind, we got you,<a class="text-red-400 underline" href="../AI_bot/index2.html">click-here</a></h1>
+    </div>
+
+    <div class="text-white flex justify-center items-center w-full text-center mb-10 mt-5 font-extralight text-lg  " style="font-family: monospace;">
+        <h1 class="bg-[#E1D4C1]/10 border border-[#E1D4C1]/20 rounded-full  p-2 text-blue-600 dark:text-sky-400">Can't organise your daily tasks?Never mind, we got your To-do list,<a class="text-red-400 underline" href="../TODOLIST/index1.html">click-here</a></h1>
+    </div>
+
+    <div class="text-white flex justify-center items-center w-full text-center mb-10 mt-5 font-extralight text-lg  " style="font-family: monospace;">
+        <h1 class="bg-[#E1D4C1]/10 border border-[#E1D4C1]/20 rounded-full underline p-2 text-green-300 dark:text-green-400"><a href="../gitlike/index.html">MARK YOUR ATTENDANCE HERE</a></h1>
     </div>
 <!-- ----------------------------------------------------------------------------------------------------------- -->
     <script src="main.js"></script>

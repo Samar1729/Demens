@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
-import { getFirestore, collection, getDocs, setDoc, doc } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js";
+import { getFirestore, collection, getDocs, setDoc, doc,getDoc } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
 
 //solving : error_msg : "Failed to resolve module specifier "firebase/app""
@@ -58,6 +58,7 @@ signup.addEventListener('click', (event) => {
                 email: email,
                 name: name,
             }
+            // const userName = userData.name 
             showMessage("account created successfully ", 'signUpMessage');
             const docRef = doc(db, "users", user.uid);
             setDoc(docRef, userData)
@@ -92,6 +93,7 @@ signin.addEventListener('click', (event)=>{
         showMessage('login is successfull', 'signInMessage')
         const user= userCredential.user
         localStorage.setItem('loggedInUserId', user.uid)
+        // localStorage.setItem('loggedInUserName', userName)
         window.location.href='../../public/index.html'
     })
     .catch((error)=>{
@@ -105,5 +107,5 @@ signin.addEventListener('click', (event)=>{
             showMessage('Account does not exist', 'signInMessage')
         }
     })
-
+    
 })
