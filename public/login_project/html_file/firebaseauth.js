@@ -94,7 +94,7 @@ signin.addEventListener('click', (event)=>{
         const user= userCredential.user
         localStorage.setItem('loggedInUserId', user.uid)
         // localStorage.setItem('loggedInUserName', userName)
-        window.location.href='../../public/index.html'
+        window.location.href='../../index.html'
     })
     .catch((error)=>{
         const errorCode = error.code
